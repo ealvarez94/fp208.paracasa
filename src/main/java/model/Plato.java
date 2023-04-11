@@ -2,6 +2,7 @@ package model;
 
 import jakarta.persistence.*;
 
+
 @Entity
 @Table(name = "plato")
 public class Plato {
@@ -13,10 +14,6 @@ public class Plato {
     public Plato(int idPlato, String nombrePlato) {
         this.idPlato = idPlato;
         this.nombrePlato = nombrePlato;
-    }
-
-    public Plato() {
-
     }
 
     public int getIdPlato() {
