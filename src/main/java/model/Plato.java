@@ -1,18 +1,22 @@
 package model;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "plato")
 public class Plato {
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idPlato;
     private String nombrePlato;
 
     public Plato(int idPlato, String nombrePlato) {
         this.idPlato = idPlato;
         this.nombrePlato = nombrePlato;
+    }
+
+    public Plato() {
+
     }
 
     public int getIdPlato() {

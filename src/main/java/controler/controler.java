@@ -1,6 +1,6 @@
 package controler;
 
-import ch.qos.logback.core.model.Model;
+import org.springframework.ui.Model;
 import interfaces.IPlatoservice;
 import model.Plato;
 import org.springframework.beans.factory.annotation.Autowired;
