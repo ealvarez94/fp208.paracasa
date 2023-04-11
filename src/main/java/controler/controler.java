@@ -1,6 +1,6 @@
 package controler;
 
-import ch.qos.logback.core.model.Model;
+import org.springframework.ui.Model;
 import interfaces.IPlatoservice;
 import model.Plato;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ public class controler {
     @GetMapping("/listar")
     public String listar(Model model){
         List<Plato>platos=service.listar();
-        model.addAttribute("platos", platos);
+        model.addAttribute ("platos", platos);
         return "index";
     }
 }
