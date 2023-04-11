@@ -1,3 +1,3 @@
-FROM openjdk:19
-ADD out/artifacts/paracasa_jar/paracasa.jar paracasa.jar
-ENTRYPOINT ["java", "-jar", "paracasa.jar"]
+FROM openjdk:17
+ADD target/ParaCasa-0.0.1-SNAPSHOT.jar ParaCasa-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar", "ParaCasa-0.0.1-SNAPSHOT.jar"]

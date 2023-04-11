@@ -1,4 +1,4 @@
-package fp8.paracasa;
+package controler;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
