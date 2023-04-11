@@ -19,7 +19,7 @@ public class controler {
     @GetMapping("/listar")
     public String listar(Model model){
         List<Plato>platos=service.listar();
-        model.addAttribute("platos", platos);
+        model.addAttribute ("platos", platos);
         return "index";
     }
 }
